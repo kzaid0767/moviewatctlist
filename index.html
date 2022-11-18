@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" sizes="32x32" href="./images/metwimba.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=League+Spartan:wght@700&display=swap" 
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Find your movie</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Find you film</h1>
+            <p>My Watchlist</p>
+        </header>
+        <form id="form" class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" name="search" id="search" placeholder="Search for a movie">
+            <button id="searchBtn">Search</button>
+        </form>
+        <div id="results-container" class="results-container">
+            
+            <i class="fa fa-film " aria-hidden="true"></i>
+            <h1  class="placeholder">Start Exploring</h1>
+        </div>
+    </div>
 
     <script src="/index.js" type="module"></script>
 </body>
