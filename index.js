@@ -91,8 +91,10 @@ function render(data){
 
 function renderWatchlist() {
     let html = `
-    <h1  class="placeholder">Your watchlist is looking a little empty..</h1>
-    <a href="/index.html"><i class="fa fa-plus-circle " aria-hidden="true"> Let's add some movies</i></a>
+        <div class="no-results">
+            <h1  class="placeholder">Your watchlist is looking a little empty..</h1>
+            <a href="/index.html"><i class="fa fa-plus-circle " aria-hidden="true"> Let's add some movies</i></a>
+        </div>
     `
     let arr=JSON.parse(localStorage.getItem('moviesData'))
     if(arr.length){
